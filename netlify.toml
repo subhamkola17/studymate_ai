@@ -1,6 +1,6 @@
 [build]
-  command = "git clone https://github.com/flutter/flutter.git --depth 1 -b stable && export PATH=\"$PATH:$PWD/flutter/bin\" && flutter config --enable-web && flutter pub get && flutter build web"
-  publish = "build/web"
+command = "rm -rf flutter && git clone https://github.com/flutter/flutter.git --depth 1 -b stable && export PATH=\"$PATH:$PWD/flutter/bin\" && flutter config --enable-web && flutter pub get && flutter build web"
+publish = "build/web"
 
 [functions]
-  directory = "netlify/functions"
+directory = "netlify/functions"

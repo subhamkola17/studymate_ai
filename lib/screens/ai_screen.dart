@@ -126,8 +126,8 @@ Future<void> askAI() async {
   try {
     final responseApi = await http.post(
   Uri.parse(
-    'https://YOUR-NETLIFY-SITE.netlify.app/.netlify/functions/chat',
-  ),
+  'https://luminous-druid-6278f0.netlify.app/.netlify/functions/chat',
+),
   headers: {
     'Content-Type': 'application/json',
   },
